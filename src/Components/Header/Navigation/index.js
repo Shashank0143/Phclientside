@@ -44,13 +44,13 @@ const Navigation = (props) => {
           <div className="col-sm-2 navPart1 ">
             <div className="catWrapper">
               <Button
-                className="allCatTab align-items-center res-hide bg-blue"
+                className="allCatTab align-items-center res-hide bg-blue mt-3 mb-3"
                 onClick={() => setisopenSidebarVal(!isopenSidebarVal)}
               >
                 <span className="icon1 mr-1">
                   <IoIosMenu />
                 </span>
-                <span className="text">ALL CATEGORIES</span>
+                <span className="text mt-1">ALL CATEGORIES</span>
                 <span className="icon2  ml-2">
                   <FaAngleDown />
                 </span>

@@ -10,7 +10,6 @@ import { FaRegHeart } from "react-icons/fa";
 import { MdOutlineCompareArrows } from "react-icons/md";
 import Tooltip from "@mui/material/Tooltip";
 import RelatedProducts from "./RelatedProducts";
-
 import { useParams } from "react-router-dom";
 import { fetchDataFromApi, postData } from "../../utils/api";
 import CircularProgress from "@mui/material/CircularProgress";
@@ -33,7 +32,7 @@ const ProductDetails = () => {
   const [reviewsData, setreviewsData] = useState([]);
   const [isAddedToMyList, setSsAddedToMyList] = useState(false);
 
-  let [cartFields] = useState({});
+  // let [cartFields] = useState({});
   let [productQuantity, setProductQuantity] = useState();
   const [tabError, setTabError] = useState(false);
   const [isDialogOpen, setIsDialogOpen] = useState(false);
@@ -357,9 +356,9 @@ const ProductDetails = () => {
                 </ul>
 
                 <div className="d-flex info mb-3">
-                  <span className="oldPrice">₹: {productData?.oldPrice}</span>
+                  <span className="oldPrice">₹ {productData?.oldPrice}</span>
                   <span className="netPrice price-color ml-2">
-                    Rs: {productData?.price}
+                  ₹ {productData?.price}
                   </span>
                 </div>
 

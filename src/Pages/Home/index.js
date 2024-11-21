@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react-hooks/exhaustive-deps */
 import HomeBanner from "../../Components/HomeBanner";
 import Button from "@mui/material/Button";
 import { IoIosArrowRoundForward } from "react-icons/io";
@@ -146,9 +148,9 @@ const Home = () => {
         </div>
       )}
 
-      {/* {context.categoryData?.length !== 0 && (
+      {context.categoryData?.length !== 0 && (
         <HomeCat catData={context.categoryData} />
-      )} */}
+      )}
 
       <section className="homeProducts pb-0">
         <div className="container">

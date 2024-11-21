@@ -1,3 +1,6 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable no-unused-vars */
 import Dialog from '@mui/material/Dialog';
 import { MdClose } from "react-icons/md";
 import Button from '@mui/material/Button';
@@ -15,6 +18,7 @@ import { FaHeart } from "react-icons/fa";
 
 const ProductModal = (props) => {
 
+    const [isExpanded, setIsExpanded] = useState(false);
     const [productQuantity, setProductQuantity] = useState();
     const [chengeQuantity, setchengeQuantity] = useState(0);
     let [cartFields, setCartFields] = useState({});
@@ -78,6 +82,9 @@ const ProductModal = (props) => {
 
     // }
 
+    const toggleDescription = () => {
+        setIsExpanded(!isExpanded);
+    };
 
     const addtoCart = () => {
 
@@ -166,17 +173,28 @@ const ProductModal = (props) => {
 
                     <div className='col-md-7'>
                         <div className='d-flex info align-items-center mb-3'>
-                            <span className='oldPrice lg mr-2'>Rs: {props?.data?.oldPrice}</span>
-                            <span className='netPrice text-danger lg'>Rs: {props?.data?.price}</span>
+                            <span className='oldPrice lg mr-2'>₹ {props?.data?.oldPrice}</span>
+                            <span className='netPrice text-danger lg'>₹ {props?.data?.price}</span>
                         </div>
 
                         <span className="badge bg-success">IN STOCK</span>
 
-                        <p className='mt-3'>Rs: {props?.data?.description}</p>
+                        <p className="mt-3" style={{ whiteSpace: "pre-wrap" }}>
+                            {isExpanded
+                                ? props?.data?.description
+                                : `${props?.data?.description?.substring(0, 500)}...`}
+                        </p>
+                        <button
+                            onClick={toggleDescription}
+                            className="btn btn-link p-0"
+                            style={{ textDecoration: "underline",color:"#252525", cursor: "pointer",padding:"10px" }}
+                        >
+                            {isExpanded ? "Show Less" : "Read More"}
+                        </button>
 
 
 
-                        {
+                        {/* {
                             props?.data?.productRam?.length !== 0 &&
                             <div className='productSize d-flex align-items-center'>
                                 <span>RAM:</span>
@@ -191,7 +209,7 @@ const ProductModal = (props) => {
 
                                 </ul>
                             </div>
-                        }
+                        } */}
 
 
                         {

@@ -21,7 +21,7 @@ const ProductZoom = (props) => {
 
     return (
         <div className="productZoom">
-            <div className='productZoom productZoomBig position-relative mb-3'>
+            <div className='productZoom productZoomBig position-relative'>
                 <div className='badge badge-primary'>{props?.discount}%</div>
                 <Swiper
                     slidesPerView={1}
@@ -66,7 +66,7 @@ const ProductZoom = (props) => {
                     return (
                         <SwiperSlide>
                         <div className={`item ${slideIndex === index && 'item_active'}`} key={index}>
-                            <img src={img} className='w-100' onClick={() => goto(index)} />
+                            <img src={img} className='w-100' onClick={() => goto(index)} alt='zoomimage' />
                         </div>
                     </SwiperSlide>
                     )

@@ -6,10 +6,10 @@
 // import { FaFacebookF } from "react-icons/fa";
 // import { FaTwitter } from "react-icons/fa";
 // import { FaInstagram } from "react-icons/fa";
-import newsLetterImg from "../../assets/images/newsletter.png";
-import Button from "@mui/material/Button";
+// import newsLetterImg from "../../assets/images/newsletter.png";
+// import Button from "@mui/material/Button";
 import { useState } from "react";
-import { IoMailOutline } from "react-icons/io5";
+// import { IoMailOutline } from "react-icons/io5";
 
 import {
   LocalShipping,

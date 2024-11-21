@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import Rating from "@mui/material/Rating";
 import { TfiFullscreen } from "react-icons/tfi";
 import Button from "@mui/material/Button";
@@ -6,11 +7,12 @@ import { useContext, useEffect, useRef, useState } from "react";
 import { MyContext } from "../../App";
 import { Link } from "react-router-dom";
 
-import Slider from "react-slick";
+// import Slider from "react-slick";
 import Skeleton from "@mui/material/Skeleton";
 import { IoIosImages } from "react-icons/io";
 import { fetchDataFromApi, postData } from "../../utils/api";
 import { FaHeart } from "react-icons/fa";
+// import ProductModal from "../ProductModal";
 
 const ProductItem = (props) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -145,11 +147,11 @@ const ProductItem = (props) => {
                 <IoIosImages />
               </Skeleton>
             ) : (
-              <img src={props.item?.images[0]} className="w-100 h-[auto] img1" />
+              <img src={props.item?.images[0]} className="w-100 img1" alt="" />
             )}
 
             {props.item?.images.length > 1 && (
-              <img src={props.item?.images[1]} className="w-100 img2" />
+              <img src={props.item?.images[1]} className="w-100 img2" alt="" />
             )}
 
 
@@ -241,7 +243,7 @@ const ProductItem = (props) => {
         </div>
       </div>
 
-      {/*<ProductModal/> */}
+      {/* <ProductModal/> */}
     </>
   );
 };

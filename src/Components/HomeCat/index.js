@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext } from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -14,11 +14,11 @@ const HomeCat = (props) => {
     return (
         <section className="homeCat pb-2">
             <div className="container">
-                <h3 className="mb-3 hd">Featured Categories</h3>
+                <h3 className="mb-3 hd">Shop by Category</h3>
                 <Swiper
                     slidesPerView={8}
                     spaceBetween={0}
-                    navigation={context.windowWidth>992 ? true : false}
+                    navigation={true}
                     slidesPerGroup={context.windowWidth>992 ? 3 : 1}
                     modules={[Navigation]}
                     loop={false}
@@ -47,7 +47,7 @@ const HomeCat = (props) => {
                                 <SwiperSlide key={index}>
                                     <Link to={`/products/category/${cat._id}`}>
                                         <div className="item text-center cursor" style={{ background: cat.color }}>
-                                            <img src={cat.images[0]} />
+                                            <img src={cat.images[0]} alt="" />
                                         </div>
                                         <h6>{cat.name}</h6>
                                     </Link>
