@@ -267,6 +267,7 @@ nav .navPart2 ul li:hover .submenu{opacity: 1; visibility: inherit; top: 100%;}
 .homeProducts .col-md-9{max-width: 78%; flex: 0 0 78%;}
 
 .hd{ font-size: 18px; font-weight: 600; text-transform: uppercase;}
+.hd-lg{font-size: 20px; font-weight: 600; text-transform: uppercase;}
 
 
 .viewAllBtn{padding: 5px 15px !important; background: #fff; border: 1px solid rgba(0,0,0,0.1) !important; border-radius: 30px !important; color: #414141 !important; font-weight: 600; text-transform: capitalize !important;}
@@ -963,5 +964,90 @@ input[type=number]::-webkit-outer-spin-button {
 
 }
 
+/* About */
 
+.about_us{
+  padding-bottom: 4rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_12{
+  text-align: center;
+  background-color: white !important;
+  max-width: 100%;
+}
+
+.image_about{
+  width: 100%;
+  height: auto;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.title_about{
+  color: #414141 ;
+  font-size: 10px;
+  padding: 2rem 1rem 2rem;
+  font-family: century Gothic;
+  font-weight: 500 !important;
+}
+
+.heading12_about{
+  font-size: 1rem;
+  padding: 2rem 1rem 2rem;
+  font-weight: 400 !important;
+  color: #414141;
+  text-align: center;
+}
+
+.introText_about{
+  max-width: 800px;
+  line-height: 1.5;
+  margin: 1.5rem 0;
+  color: #292929;
+  font-size: 15px !important;
+  font-weight: 400 !important;
+  text-align: justify;
+  padding: 0.8rem 1rem;
+}
+
+.buttonContainer_about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  padding: 1rem 0;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.button1_about{
+  background-color: #000 !important;
+  color: white !important;
+  width: fit-content !important;
+  padding: 0.8rem 2rem !important;
+  margin-left: 3.3rem !important;
+  border-radius: 5px !important;
+}
+.button1_about:hover{
+  background-color: #ed1c24 !important;
+  color: white !important;
+}
+
+.button2_about{
+  background-color: #292929 !important;
+  color: white !important;
+  width: fit-content !important;
+  padding: 0.8rem 2rem !important;
+  margin-left: 1.3rem !important;
+  border-radius: 5px !important;
+}
+.button2_about:hover{
+  background-color: #ed1c24 !important;
+  color: white !important;
+}
 

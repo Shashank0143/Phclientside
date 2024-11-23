@@ -14,7 +14,7 @@ const HomeCat = (props) => {
     return (
         <section className="homeCat pb-2">
             <div className="container">
-                <h3 className="mb-3 hd">Shop by Category</h3>
+                <h1 className="mb-3 hd-lg text-center ">Shop by Category</h1>
                 <Swiper
                     slidesPerView={8}
                     spaceBetween={0}
@@ -46,7 +46,7 @@ const HomeCat = (props) => {
                             return (
                                 <SwiperSlide key={index}>
                                     <Link to={`/products/category/${cat._id}`}>
-                                        <div className="item text-center cursor" style={{ background: cat.color }}>
+                                        <div className="item text-center cursor" style={{ background: cat.color, border:"#4C7383 solid 8px" }}>
                                             <img src={cat.images[0]} alt="" />
                                         </div>
                                         <h6>{cat.name}</h6>

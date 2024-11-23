@@ -1,3 +1,5 @@
+/* eslint-disable array-callback-return */
+/* eslint-disable no-unused-vars */
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import "./responsive.css";
@@ -22,6 +24,7 @@ import SearchPage from "./Pages/Search";
 import { fetchDataFromApi, postData } from "./utils/api";
 import Snackbar from "@mui/material/Snackbar";
 import Alert from "@mui/material/Alert";
+import About from "./Pages/About";
 
 const MyContext = createContext();
 
@@ -275,6 +278,7 @@ function App() {
           <Route exact={true} path="/orders" element={<Orders />} />
           <Route exact={true} path="/my-account" element={<MyAccount />} />
           <Route exact={true} path="/search" element={<SearchPage />} />
+          <Route exact={true} path="/about_us" element={<About/>}/>
         </Routes>
         {isHeaderFooterShow === true && <Footer />}
 
