@@ -25,6 +25,12 @@ import { fetchDataFromApi, postData } from "./utils/api";
 import Snackbar from "@mui/material/Snackbar";
 import Alert from "@mui/material/Alert";
 import About from "./Pages/About";
+import Contact from "./Pages/Contact";
+import ReturnPolicy from "./Pages/Return";
+import ShippingPolicy from "./Pages/Shipping";
+import PrivacyPolicy from "./Pages/Privacy";
+import TermsAndCondition from "./Pages/TermsCondition";
+import TermsAndUse from "./Pages/TermAndUse";
 
 const MyContext = createContext();
 
@@ -279,6 +285,12 @@ function App() {
           <Route exact={true} path="/my-account" element={<MyAccount />} />
           <Route exact={true} path="/search" element={<SearchPage />} />
           <Route exact={true} path="/about_us" element={<About/>}/>
+          <Route exact={true} path="/contact" element={<Contact/>}/>
+          <Route exact={true} path="/policy/return" element={<ReturnPolicy/>}/>
+          <Route exact={true} path="/policy/shipping" element={<ShippingPolicy/>}/>
+          <Route exact={true} path="/policy/privacy" element={<PrivacyPolicy/>}/>
+          <Route exact={true} path="/terms/conditions" element={<TermsAndCondition/>}/>
+          <Route exact={true} path="/policy/Terms" element={<TermsAndUse/>}/>
         </Routes>
         {isHeaderFooterShow === true && <Footer />}
 

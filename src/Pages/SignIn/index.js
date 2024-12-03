@@ -1,3 +1,6 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable no-unused-vars */
 import { useContext, useEffect, useState } from "react";
 import { MyContext } from "../../App";
 import TextField from "@mui/material/TextField";
@@ -7,6 +10,8 @@ import { Link, useNavigate } from "react-router-dom";
 import GoogleImg from "../../assets/images/googleImg.png";
 import CircularProgress from "@mui/material/CircularProgress";
 import { postData } from "../../utils/api";
+
+import Logo from "../../assets/logo.jpg"
 
 
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
@@ -208,7 +213,10 @@ const SignIn = () => {
       <div className="container">
         <div className="box card p-3 shadow border-0">
           <div className="text-center">
-            Logo
+            <img src={Logo} alt="Logo" 
+            style={{
+              width:"100px",
+            }}/>
           </div>
 
           <form className="mt-3" onSubmit={login}>
@@ -273,7 +281,7 @@ const SignIn = () => {
               variant="outlined"
               onClick={signInWithGoogle}
             >
-              <img src={GoogleImg} /> Sign In with Google
+              <img src={GoogleImg} alt=""/> Sign In with Google
             </Button>
           </form>
         </div>

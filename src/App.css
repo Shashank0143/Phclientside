@@ -267,7 +267,7 @@ nav .navPart2 ul li:hover .submenu{opacity: 1; visibility: inherit; top: 100%;}
 .homeProducts .col-md-9{max-width: 78%; flex: 0 0 78%;}
 
 .hd{ font-size: 18px; font-weight: 600; text-transform: uppercase;}
-.hd-lg{font-size: 20px; font-weight: 600; text-transform: uppercase;}
+.hd-lg{font-size: 20px; font-weight: 600; text-transform: uppercase; font-family: century-gothic;}
 
 
 .viewAllBtn{padding: 5px 15px !important; background: #fff; border: 1px solid rgba(0,0,0,0.1) !important; border-radius: 30px !important; color: #414141 !important; font-weight: 600; text-transform: capitalize !important;}
@@ -1050,4 +1050,472 @@ input[type=number]::-webkit-outer-spin-button {
   background-color: #ed1c24 !important;
   color: white !important;
 }
+
+/* Contact Us */
+
+.root_contactus{
+  padding: 8rem 0;
+  background-color: white;
+  width: 100%;
+  overflow: hidden;
+}
+
+.contact_Container_contactus {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.title_conttact_us{
+  color: #414141;
+  font-size: 1.5rem !important;
+  padding: 1rem 3rem;
+  font-family: century-gothic;
+  font-weight: 700 !important;
+  letter-spacing: 2px;
+}
+
+.divider_contact{
+  width: 100%;
+  background-color: #b6b6b6;
+  margin: 2rem 0 !important;
+}
+
+.helpTitle_contact_us {
+  font-size: 18px;
+  color: black;
+  padding: 2rem 0;
+}
+
+.para_contact {
+  padding-bottom: 3rem;
+  margin-left: 0.5rem;
+  color: #414141;
+  line-height: 1.5rem;
+  font-size: 16px !important;
+  width: 90%;
+  letter-spacing: 2px;
+}
+
+.address_contacts {
+  padding-bottom: 3rem;
+  margin-left: 0.5rem;
+  color: #414141;
+  line-height: 1.5rem;
+  font-size: 16px !important;
+  width: 90%;
+  letter-spacing: 2px;
+}
+
+.supportButton {
+  background-color: #292929 !important;
+  color: white !important;
+  width: fit-content !important;
+  padding: 0.8rem 2rem !important;
+  margin-left: 3.3rem !important;
+  border-radius: 5px !important;
+}
+
+.supportButton:hover {
+  background-color: #ed1c24 !important;
+  color: white !important;
+}
+
+.buttonGroup > *{
+ margin: 16px;
+}
+
+.callButton {
+  background-color: #292929 !important;
+  color: white !important;
+  width: fit-content !important;
+  padding: 0.8rem 2rem !important;
+  margin-left: 1.3rem !important;
+  border-radius: 5px !important;
+}
+
+.callButton:hover {
+  background-color: #ed1c24 !important;
+  color: white !important;
+}
+
+.formContainer_container {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Form Field */
+.formField_contact {
+  width: 100%;
+}
+
+/* Submit Buttons */
+.submitButtons {
+  align-self: flex-start;
+  background-color: #292929 !important;
+  color: white !important;
+  width: fit-content !important;
+  padding: 1rem 3rem !important;
+  border-radius: 5px !important;
+}
+
+.submitButtons:hover {
+  background-color: #ed1c24 !important;
+  color: white !important;
+}
+
+/* Select Option */
+.SelectOption_contact {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.SelectOption_contact .MuiOutlinedInput-root_contactus fieldset {
+  border-color: #000;
+  border-radius: none !important;
+}
+
+.SelectOption_contact .MuiOutlinedInput-root_contactus:hover fieldset {
+  border-color: #000;
+}
+
+.SelectOption_contact .MuiOutlinedInput-root_contactus.Mui-focused fieldset {
+  border-color: #000;
+}
+
+.SelectOption_contact .MuiSelect-root_contactus {
+  background-color: white;
+  color: black;
+}
+
+.SelectOption_contact .MuiSelect-icon {
+  color: black;
+}
+
+.SelectOption_contact .MuiList-root_contactus {
+  background-color: white;
+  color: black;
+}
+
+/* Label Text */
+.lableText_contact {
+  color: #000;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+/* Menu */
+.menu_contact .MuiList-root_contactus {
+  background-color: white;
+  color: black;
+}
+@media (max-width: 768px){
+
+  .title_conttact_us{
+    font-size: 14px;
+    padding: 1rem 0;
+  }
+
+  .para_contact{
+    width: 100%;
+  }
+
+  .buttonGroup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .supportButton {
+    margin-left: 15px !important;
+  }
+
+  .callButton {
+    padding: 0.8rem 3.4rem !important;
+  }
+}
+
+/* Return Policy, Shipping Policy */
+
+.container__0 {
+  max-width: 900px;
+  margin: 5rem auto 0;
+  padding: 20px;
+  background-color: white;
+}
+
+.image-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+.blur{
+  z-index: 5;
+  color: #333333;
+}
+.policy-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 32px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.content-container {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333333;
+  width: 90%;
+  font-family: "century-gothic", sans-serif;
+  display: block;
+margin: 0 auto;
+  gap: 1rem;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+.contact-info {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.email {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.email:hover {
+  text-decoration: underline;
+}
+
+.phone {
+  color: #333333;
+}
+
+/* Privacy Policy */
+
+.privacy-policy-container {
+  width: 90%;
+  padding: 8rem 0;
+  background-color: #ffffff;
+   margin: 0 auto;
+}
+.container___ {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+ 
+  justify-content: center;
+  padding: 20px;
+
+}
+
+.container___ h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.container___ h2 {
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+.container___ ul {
+  margin-bottom: 15px;
+} 
+
+.container___ li {
+  margin: 10px;
+  list-style: disc;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .container___ h1 {
+    font-size: 20px;
+  }
+
+  .container___ h2 {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+
+  .container___ p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+}
+
+/* Terms & Condition */
+
+.terms-container {
+  font-family: 'century-gothic', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.terms-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.terms-content {
+  margin-top: 10px;
+}
+
+.contact-info {
+  margin-top: 30px;
+  font-style: italic;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+}
+
+.contact-info p:last-child {
+  margin-bottom: 0;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .terms-container {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .terms-title {
+    font-size: 20px;
+  }
+
+  .contact-info {
+    margin-top: 20px;
+  }
+}
+
+.terms-container {
+  width: 70%;
+  padding: 25px 2px;
+  background-color: white;
+  margin: 5rem  auto  0;
+}
+
+.terms-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.terms-overlay {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translateY(-50%);
+ text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  z-index: 1;
+}
+
+.terms-content {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333333;
+  width: 80%;
+ font-family: "century-gothic", sans-serif;
+ display: block;
+ gap: 1rem;
+ padding: 23px;
+ margin: 0 auto;
+ 
+}
+
+.terms-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 600px) {
+  .terms-overlay {
+    font-size: 20px;
+  }
+  
+  .terms-title {
+    font-size: 20px;
+  }
+  
+  .terms-content {
+    font-size: 14px;
+  }
+}
+
+
+
 

@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react-hooks/exhaustive-deps */
 import { Link } from "react-router-dom";
 import Rating from '@mui/material/Rating';
 import QuantityBox from "../../Components/QuantityBox";
@@ -35,11 +37,11 @@ const Cart = () => {
 
         context.setEnableFilterTab(false);
         const token = localStorage.getItem("token");
-        if (token !== "" && token !== undefined && token !== null) {
+        if (token) {
             setIsLogin(true);
         }
         else {
-            history("/signIn");
+            setIsLogin(false);
         }
 
         const user = JSON.parse(localStorage.getItem("user"));
@@ -49,6 +51,8 @@ const Cart = () => {
             // console.log("Fetched Cart Data: ", res);
         })
     }, []);
+
+    
 
     const quantity = (val) => {
         setProductQuantity(val);
@@ -123,12 +127,14 @@ const Cart = () => {
             .reduce((total, value) => total + value, 0)
         : 0;
 
-    // Determine GST based on subtotal
-    const gstRate = subtotal < 1000 ? 0.05 : 0.12;
-    const gstAmount = subtotal * gstRate;
+    //     console.log("subTotal: ",subtotal)
 
-    // Calculate total including GST
-    const total = subtotal + gstAmount;
+    // // Determine GST based on subtotal
+    // const gstRate = subtotal < 1000 ? 0.05 : 0.12;
+    // const gstAmount = subtotal * gstRate;
+
+    // // Calculate total including GST
+    // const total = subtotal + gstAmount;
 
     return (
         <>
@@ -221,15 +227,15 @@ const Cart = () => {
                                             <span className="ml-auto"><b>Free</b></span>
                                         </div>
 
-                                        <div className="d-flex align-items-center mb-3">
+                                        {/* <div className="d-flex align-items-center mb-3">
                                             <span>Gst</span>
                                             <span className="ml-auto"><b>+ {(gstRate * 100).toFixed(0)}%</b></span>
-                                        </div>
+                                        </div> */}
 
                                         <div className="d-flex align-items-center">
                                             <span>Total</span>
                                             <span className="ml-auto text-red font-weight-bold">
-                                            {total.toLocaleString("en-US", {
+                                            {subtotal.toLocaleString("en-US", {
                                                 style: "currency",
                                                 currency: "INR",
                                             })}

@@ -107,7 +107,7 @@ const footMenu = [
       {
         id: 3,
         link: "SITEMAP",
-        path: "/policy/Terms",
+        path: "/sitemap.xml",
       },
       {
         id: 4,

@@ -1,15 +1,20 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable no-unused-vars */
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import { useContext, useEffect, useState } from "react";
 import { MyContext } from "../../App";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
 
+import Logo from "../../assets/logo.jpg"
+
 import GoogleImg from "../../assets/images/googleImg.png";
 import { postData } from "../../utils/api";
 import { useNavigate } from "react-router-dom";
 import CircularProgress from "@mui/material/CircularProgress";
 
-import { initializeApp } from "firebase/app";
+// import { initializeApp } from "firebase/app";
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { firebaseApp } from "../../firebase";
 
@@ -198,8 +203,8 @@ const SignUp = () => {
   };
 
   return (
-    <section className="section signInPage signUpPage">
-      <div className="shape-bottom">
+    <section className="section signInPage signUpPage bg-blue">
+      <div className="shape-bottom bg-blue">
         {" "}
         <svg
           fill="#fff"
@@ -220,7 +225,10 @@ const SignUp = () => {
       <div className="container">
         <div className="box card p-3 shadow border-0">
           <div className="text-center">
-            logo
+          <img src={Logo} alt="Logo" 
+            style={{
+              width:"100px",
+            }}/>
           </div>
 
           <form className="mt-2" onSubmit={register}>
@@ -321,7 +329,7 @@ const SignUp = () => {
               variant="outlined"
               onClick={signInWithGoogle}
             >
-              <img src={GoogleImg} /> Sign In with Google
+              <img src={GoogleImg} alt="" /> Sign In with Google
             </Button>
           </form>
         </div>

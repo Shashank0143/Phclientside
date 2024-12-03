@@ -46,7 +46,7 @@ const HomeCat = (props) => {
                             return (
                                 <SwiperSlide key={index}>
                                     <Link to={`/products/category/${cat._id}`}>
-                                        <div className="item text-center cursor" style={{ background: cat.color, border:"#4C7383 solid 8px" }}>
+                                        <div className="item text-center cursor" style={{ background: cat.color, border:"#4C7383 solid 6px", borderRadius:"5px"}}>
                                             <img src={cat.images[0]} alt="" />
                                         </div>
                                         <h6>{cat.name}</h6>
